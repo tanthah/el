@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+    <persistence-unit name="MyWebAppPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>Model.Account</class>
+<class>Model.Admin</class>
+<class>Model.Assessment</class>
+<class>Model.Category</class>
+<class>Model.Chapter</class>
+<class>Model.Course</class>
+<class>Model.Description</class>
+<class>Model.FileMedia</class>
+<class>Model.Lesson</class>
+<class>Model.NotificationRequest</class>
+<class>Model.Order</class>
+<class>Model.Payment</class>
+<class>Model.Question</class>
+<class>Model.Review</class>
+<class>Model.Student</class>
+<class>Model.Submission</class>
+<class>Model.Teacher</class>
+<class>Model.Users</class>
+<class>Model.PasswordResetToken</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="123456"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+        </properties>
+    </persistence-unit>
+</persistence>
