@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/el1">
+    <Resource name="jdbc/MyDB"
+              auth="Container"
+              type="jakarta.sql.DataSource"
+              maxTotal="100"
+              maxIdle="30"
+              maxWaitMillis="10000"
+              username="${env.DATABASE_USERNAME}"
+              password="${env.DATABASE_PASSWORD}"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="${env.DATABASE_URL}"/>
+</Context>
